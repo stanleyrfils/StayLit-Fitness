@@ -1,0 +1,51 @@
+#navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+#navigation .logo{
+  margin-bottom: 0.5rem;
+}
+#package{
+  display: flex;
+  flex-direction: column;
+}
+#package .package-img{
+  height: 768px;
+}
+#package .package-text,
+#package .package-text ul li{
+  text-align: center;
+}
+@media only screen and (max-width: 500px){
+  #navigation .logo{
+    font-size: 2rem;
+  }
+  #navigation ul li a{
+    margin: 0;
+  }
+  #wallpaper .slogan{
+    color: #EC9A29;
+  }
+  #perk .benefits{
+    display: flex;
+    flex-direction: column;
+  }
+  #package .package-img{
+    display: none;
+  }
+  #package .package-text ul li{
+    font-size: 1rem;
+    text-align: start;
+  }
+  #contact{
+    background: #A8201A;
+  }
+  #contact .contact-form{
+    margin: auto;
+  }
+  #contact .map{
+    display: none;
+  }
+}

@@ -1,0 +1,206 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+}
+/* -------------------- TEMPLATE CLASSES -------------------- */
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+}
+.focus{
+  color: #A8201A;
+}
+.icon{
+  background: #143642;
+  color: #EC9A29;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.button{
+  border: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  background: #A8201A;
+  color: #143642;
+  font-weight: 600;
+}
+.button-alt{
+  display: block;
+  border: none;
+  padding: 1rem;
+  background: #DAD2D8;
+  color: #143642;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.button-alt:hover{
+  background: #EC9A29;
+  color: #DAD2D8;
+}
+.button:hover{
+  background: #EC9A29;
+  color: #DAD2D8;
+}
+.center-text{
+  text-align: center;
+}
+.large-text{
+  font-size: 3rem;
+  margin: 1rem;
+}
+.medium-text{
+  font-size: 2rem;
+  margin: 0.25rem;
+}
+.small-text{
+  font-size: 1.25rem;
+  margin: 0.25rem;
+}
+.bkgd{
+  background: #A8201A;
+  color: #DAD2D8;
+}
+.bkgd-bright{
+  background: #DAD2D8;
+  color: #143642; 
+}
+.bkgd-dark{
+  background: #143642;
+  color: #DAD2D8;
+}
+/* -------------------- NAVBAR -------------------- */
+#navigation{
+  display: flex;
+  justify-content: space-between;
+  background: #EC9A29;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.5rem;
+}
+#navigation h1{
+  font-size: 2.5rem;
+  color: #143642;
+  font-variant: small-caps;
+}
+#navigation ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+#navigation ul li a{
+  font-weight: 600;
+  color: #143642;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+#navigation ul li a:hover{
+  background: #A8201A;
+  color: #DAD2D8;
+  border-radius: 0.5rem;
+}
+/* -------------------- WALLPAPER -------------------- */
+#wallpaper{
+  background: #DAD2D8 url('../images/gymBackground.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #DAD2D8;
+}
+#wallpaper .wallpaper-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75%;
+}
+#wallpaper .wallpaper-content .slogan{
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+/* -------------------- BENEFITS -------------------- */
+#perk .benefits{
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+}
+#perk .benefits .offer{
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+}
+/* -------------------- MEMBERSHIP -------------------- */
+#package{
+  display: flex;
+  flex-direction: row;
+}
+#package div{
+  flex: 1;
+}
+#package .package-img{
+  background: #DAD2D8 url('../images/fitnessPhoto.jpg') no-repeat center center/cover;
+}
+#package .package-text{
+  padding: 2rem;
+}
+#package .package-text h3{
+  color: #EC9A29;
+  text-decoration: underline;
+}
+#package .package-text ul{
+  list-style: none;
+}
+#package .package-text ul li{
+  font-size: 1.25rem;
+  text-align: end;
+  border-bottom: 1px dotted #EC9A29;
+}
+/* -------------------- SOCIAL MEDIA -------------------- */
+#social .follow{
+  display: flex;
+  padding: 2rem 0;
+}
+#social .follow img{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+/* -------------------- CONTACT FORM -------------------- */
+#contact{
+  display: flex;
+}
+#contact .contact-from,
+#contact .map{
+  flex: 1;
+}
+#contact .contact-form h2,
+#contact .contact-form p{
+  margin: 1.5rem;
+}
+#contact .contact-form .info{
+  margin: 1.5rem;
+}
+#contact .contact-form label{
+  display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+  width: 100%;
+  padding: 0.5rem;
+}
+/* -------------------- FOOTER -------------------- */
+#main-footer{
+  padding: 1.5rem 2rem;
+}
